@@ -4,7 +4,9 @@ export const GlobalStyle = createGlobalStyle`
 
     :root {
         --background: #C8D3DE;
-
+        --very-dark-blue: hsl(235, 21%, 11%);
+        --list-background: hsl(235, 24%, 19%);
+        --light-grayish-blue: hsl(233, 14%, 35%)
     }
     * { 
         margin:0;
@@ -42,6 +44,7 @@ export const GlobalStyle = createGlobalStyle`
         opacity: 0.6;
         cursor: not-allowed;
     }
+    
 
 
 `

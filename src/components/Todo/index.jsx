@@ -1,9 +1,12 @@
 import React from "react";
+import { StyledLi } from "./styles"
 
 export function Todo(props){
     return(
-        <li>
+        <StyledLi>
+            <input type="checkbox" className="check"/>
             {props.value}
-        </li>
+            <span>x</span>
+        </StyledLi>
     )
 }

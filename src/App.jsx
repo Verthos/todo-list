@@ -11,8 +11,7 @@ export function App() {
       <Header/>
       <TodoList/>
       <Footer/>
-
-
+      
       <GlobalStyle/>
     </>
   );
