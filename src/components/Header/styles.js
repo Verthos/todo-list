@@ -7,10 +7,10 @@ export const StyledHeader = styled.header`
     background: black;
     background-image: url(${bgMobileDark});
     background-repeat: round;
-    padding: 2.5rem;
+    padding: 4rem 3rem;
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 
     color: white;
