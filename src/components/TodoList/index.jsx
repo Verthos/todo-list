@@ -81,11 +81,11 @@ export function TodoList(){
                 </form>
                 <ul>
                     {   filterIndex === 1 ?
-                        todos.map(todo => {if(todo.complete === false) return(<Todo onClick={() => handleCompleteTask(todo.id)} key={todo.id} isComplete={todo.complete} value={todo.title}/>)})
+                        todos.map(todo => todo.complete === false ? <Todo onClick={() => handleCompleteTask(todo.id)} key={todo.id} isComplete={todo.complete} value={todo.title}/>
                         : filterIndex === 2 ?
-                        todos.map(todo => {if(todo.complete === true) return(<Todo onClick={() => handleCompleteTask(todo.id)} key={todo.id} isComplete={todo.complete} value={todo.title}/>)})
+                        todos.map(todo => todo.complete === true ? <Todo onClick={() => handleCompleteTask(todo.id)} key={todo.id} isComplete={todo.complete} value={todo.title}/>
                         : 
-                        todos.map(todo => { return(<Todo onClick={() => handleCompleteTask(todo.id)} deleteTodo={() => handleDeleteTodo(todo.id)} key={todo.id} isComplete={todo.complete} value={todo.title}/>)})
+                        todos.map(todo => <Todo onClick={() => handleCompleteTask(todo.id)} deleteTodo={() => handleDeleteTodo(todo.id)} key={todo.id} isComplete={todo.complete} value={todo.title}/>
                     }
                     <li className="stats">
                         <button>{todos?.length} {todos?.length > 1 ? "itens pendentes" : "item pendente"}</button>
