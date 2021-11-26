@@ -26,7 +26,6 @@ export function TodoList(){
         setNewTitle("")
     }
 
-
     const handleClearCompleted =  () => {
         let newTodoList = todos.filter(todo => todo.complete === false)
         setTodos(newTodoList)
@@ -104,7 +103,7 @@ export function TodoList(){
                         })}
                     </ul>
                 </section>    
-
+                
             </div>
             
         </Container>

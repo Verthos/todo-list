@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import bgMobileDark from "../../assets/images/bg-mobile-dark.jpg"
+import bgDesktopDark from "../../assets/images/bg-desktop-dark.jpg"
+
 
 export const StyledHeader = styled.header`
     min-height: 15rem;
@@ -17,6 +19,11 @@ export const StyledHeader = styled.header`
     
     h1{
         font-weight: normal;
+    }
+
+
+    @media(min-width: 550px){
+        background-image: url(${bgDesktopDark});
     }
     
 
